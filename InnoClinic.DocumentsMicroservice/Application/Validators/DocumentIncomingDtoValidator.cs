@@ -7,6 +7,6 @@ public class DocumentIncomingDtoValidator : AbstractValidator<DocumentIncomingDt
 {
 	public DocumentIncomingDtoValidator()
 	{
-		RuleFor(e => e.Name).Matches("^[0-9a-z]+\\.[0-9a-z]+").NotEmpty();
+		RuleFor(e => e.Name).Matches("^[0-9a-zA-Z-]+\\.[0-9a-zA-Z]+").NotEmpty();
 	}
 }
