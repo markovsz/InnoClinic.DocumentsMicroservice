@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.ConfigureAzureStorage(builder.Configuration);
 builder.Services.ConfigureRepositories();
 builder.Services.ConfigureServices();
+builder.Services.ConfigureValidators();
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
