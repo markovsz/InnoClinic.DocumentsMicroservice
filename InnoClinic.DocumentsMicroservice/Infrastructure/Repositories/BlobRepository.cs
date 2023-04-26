@@ -10,12 +10,10 @@ public class BlobRepository : IBlobRepository
 {
     protected readonly string _connectionString;
     protected readonly string _blobContainerName;
-    string t;
 
     public BlobRepository(IConfiguration configuration)
     {
         _connectionString = configuration.GetConnectionString("AzureBlobStorageConnection");
-        t = configuration.GetSection("AzureBlobStorage").Value;
         _blobContainerName = configuration.GetSection("AzureBlobStorage").GetSection("BlobContainer").Value;
     }
 
