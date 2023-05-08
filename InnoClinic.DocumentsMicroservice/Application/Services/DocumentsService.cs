@@ -19,7 +19,7 @@ public class DocumentsService : IDocumentsService
         _documentsRepository = documentsRepository;
     }
 
-    public async Task<string> UploadAsync(DocumentIncomingDto incomingDto, string partitionName)
+    public async Task<DocumentCreatedOutgoingDto> UploadAsync(DocumentIncomingDto incomingDto, string partitionName)
     {
         var document = new Document();
         document.PartitionKey = partitionName;
@@ -32,7 +32,11 @@ public class DocumentsService : IDocumentsService
 
         var uri = await _blobRepository.UploadAsync(stream, document.FileName, contentType);
         await _documentsRepository.CreateAsync(document);
-        return document.FileName;
+        var outgoingDto = new DocumentCreatedOutgoingDto()
+        {
+            FilePath = $"/api/Documents/{partitionName}/" + document.FileName
+        };
+        return outgoingDto;
     }
 
     public async Task<DocumentOutgoingDto> DownloadAsync(string documentName, string partitionName)

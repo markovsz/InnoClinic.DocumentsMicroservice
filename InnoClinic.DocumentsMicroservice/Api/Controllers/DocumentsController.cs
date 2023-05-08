@@ -31,8 +31,8 @@ namespace Api.Controllers
             result.HandleValidationResult();
             result = _partitionNameValidator.Validate(partitionName);
             result.HandleValidationResult();
-            string fileName = await _documentsService.UploadAsync(incomingDto, partitionName);
-            return Ok(new { file = $"/api/Documents/{partitionName}/" + fileName});
+            var documentDto = await _documentsService.UploadAsync(incomingDto, partitionName);
+            return Ok(documentDto);
         }
 
 
