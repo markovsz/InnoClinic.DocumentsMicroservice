@@ -1,16 +1,12 @@
 ﻿using Application.Services;
 using Application.Services.Abstractions;
-using Domain.Abstractions;
-using Infrastructure.Repositories;
-using Microsoft.Extensions.Azure;
-using System;
-using Microsoft.Extensions.Configuration;
-using Azure.Storage.Blobs;
-using Azure.Core.Extensions;
 using Application.Validators;
-using Application.DTOs.Incoming;
-using FluentValidation;
+using Domain.Abstractions;
 using Domain.RequestParameters;
+using FluentValidation;
+using Infrastructure.Repositories;
+using InnoClinic.SharedModels.DTOs.Documents.Incoming;
+using Microsoft.Extensions.Azure;
 
 namespace Api.Extensions;
 

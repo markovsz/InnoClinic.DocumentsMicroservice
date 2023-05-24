@@ -1,9 +1,8 @@
-﻿using Application.DTOs.Incoming;
-using Application.DTOs.Outgoing;
-using Application.Services.Abstractions;
+﻿using Application.Services.Abstractions;
 using Domain.Abstractions;
 using Domain.Entities;
-using Domain.Models;
+using InnoClinic.SharedModels.DTOs.Documents.Incoming;
+using InnoClinic.SharedModels.DTOs.Documents.Outgoing;
 using MimeTypes;
 
 namespace Application.Services;

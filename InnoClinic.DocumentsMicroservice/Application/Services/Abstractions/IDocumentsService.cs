@@ -1,5 +1,5 @@
-﻿using Application.DTOs.Incoming;
-using Application.DTOs.Outgoing;
+﻿using InnoClinic.SharedModels.DTOs.Documents.Incoming;
+using InnoClinic.SharedModels.DTOs.Documents.Outgoing;
 
 namespace Application.Services.Abstractions;
 

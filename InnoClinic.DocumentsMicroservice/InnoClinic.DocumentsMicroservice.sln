@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{DD4DCBFD-791E-45BD-BA3C-74932607C469}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{DD4DCBFD-791E-45BD-BA3C-74932607C469}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{AD6529A1-7567-45E4-B822-9C07C1D3B2F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{AD6529A1-7567-45E4-B822-9C07C1D3B2F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{ED5E5DF4-F1DD-44D5-9572-B0F443A2F404}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{ED5E5DF4-F1DD-44D5-9572-B0F443A2F404}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{E141A1F2-2659-4FBB-86BC-30B7DD475437}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{E141A1F2-2659-4FBB-86BC-30B7DD475437}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InnoClinic.SharedModels", "..\..\InnoClinic.SharedModels\InnoClinic.SharedModels\InnoClinic.SharedModels.csproj", "{628E41F8-E314-459B-9885-F31AB54BEFF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E141A1F2-2659-4FBB-86BC-30B7DD475437}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E141A1F2-2659-4FBB-86BC-30B7DD475437}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E141A1F2-2659-4FBB-86BC-30B7DD475437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628E41F8-E314-459B-9885-F31AB54BEFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628E41F8-E314-459B-9885-F31AB54BEFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628E41F8-E314-459B-9885-F31AB54BEFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628E41F8-E314-459B-9885-F31AB54BEFF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

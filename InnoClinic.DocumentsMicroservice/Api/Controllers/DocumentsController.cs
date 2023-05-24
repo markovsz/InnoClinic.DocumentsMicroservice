@@ -1,8 +1,8 @@
 ﻿using Api.Extensions;
-using Application.DTOs.Incoming;
 using Application.Services.Abstractions;
 using Domain.RequestParameters;
 using FluentValidation;
+using InnoClinic.SharedModels.DTOs.Documents.Incoming;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
